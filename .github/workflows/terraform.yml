@@ -50,8 +50,6 @@ on:
       tags:
         description: 'Test scenario tags'
 
-permissions:
-  contents: read and write
 
 jobs:
   terraform:
