@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 module "vpc-1" {
-=======
-module "vpc" {
->>>>>>> af0a024942ae1cdf10f7e4c272f7f77c01b37f71
 
   source = "github.com/dkumar-p/terraform-aws-vpc.git?ref=v3.19.0"
 
@@ -38,11 +34,7 @@ module "vpc" {
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
-<<<<<<< HEAD
   vpc_id      = module.vpc-1.vpc_id
-=======
-  vpc_id      = module.vpc.vpc_id
->>>>>>> af0a024942ae1cdf10f7e4c272f7f77c01b37f71
   ingress {
     description = "TLS from VPC"
     from_port   = 443
