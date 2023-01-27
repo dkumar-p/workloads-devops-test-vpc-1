@@ -57,7 +57,7 @@ jobs:
     - name: Terraform Plan
       run: terraform plan -input=false
 
-
+  terraform-test:
     name: 'CD-test'
     runs-on: ubuntu-latest
     environment: production
