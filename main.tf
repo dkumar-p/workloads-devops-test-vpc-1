@@ -1,5 +1,9 @@
 provider "aws" {
+<<<<<<< HEAD
   region   = "ap-south-1"
+=======
+  region = "ap-south-1"
+>>>>>>> af0a024942ae1cdf10f7e4c272f7f77c01b37f71
 }
 
 terraform {
