@@ -58,7 +58,6 @@ jobs:
       run: terraform plan -input=false
 
 
-jobs:
   terraform:
     name: 'CD-test'
     runs-on: ubuntu-latest
