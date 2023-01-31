@@ -34,6 +34,8 @@ module "ec2_instance_1" {
     }
   ]
 
+  user_data = file("015_userdata.sh")
+
   tags = merge(var.tags,
     {
       "resource:name" = local.ec2_name_1
