@@ -33,3 +33,23 @@ variable "vpc_public_subnets_cluster" {
   type        = list(string)
   default     = []
 }
+
+## EC2 Details ==============================================
+
+variable "ami_master" {
+  description = "AMI ID of the EC2 Instance"
+  type        = string
+  #default     = ""
+}
+
+variable "instance_type" {
+  description = "Instance Type of the EC2 Instance"
+  type        = string
+  #default     = ""
+}
+
+variable "key_name" {
+  description = "key_name of the EC2 Instance"
+  type        = string
+  #default     = ""
+}
