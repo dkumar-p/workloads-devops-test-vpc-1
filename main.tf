@@ -7,14 +7,14 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.63"
+      version = ">= 4.67.0"
     }
   }
 
   backend "s3" {
-    bucket               = "ocpame2-sb-tfs-115901469345-001"
-    key                  = "workloads-devops-test-vpc-1.tfstate"
+    bucket               = "aws-smb-pavan-state-file"
+    key                  = "workloads-devops-test-vpc-1-aws-smb.tfstate"
     workspace_key_prefix = "workspaces"
-    region               = "eu-west-1"
+    region               = "ap-south-1"
   }
 }

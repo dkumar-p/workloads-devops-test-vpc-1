@@ -59,6 +59,7 @@ jobs:
 
   terraform-test:
     name: 'CD-test'
+    needs: terraform
     runs-on: ubuntu-latest
     environment: production
 

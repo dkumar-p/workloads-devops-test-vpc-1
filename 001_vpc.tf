@@ -1,6 +1,6 @@
 module "vpc-1" {
 
-  source = "github.com/dkumar-p/terraform-aws-vpc.git?ref=v3.19.0"
+  source = "github.com/dkumar-p/terraform-aws-vpc.git"
 
 
   name                 = var.name_vpc_cluster

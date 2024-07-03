@@ -13,6 +13,6 @@ vpc_private_subnets_cluster = ["10.98.20.32/28", "10.98.20.48/28", "10.98.20.64/
 
 ### EC2 Details =========================================
 
-ami_master    = "ami-01a4f99c4ac11b03c"
+ami_master    = "ami-0a7c3c5efeedc3034"
 instance_type = "t2.micro"
-key_name      = "devops-test-1"
+key_name      = "pavan-test-keypair"
